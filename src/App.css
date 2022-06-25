@@ -1,38 +1,120 @@
-.App {
+
+body {
+  background-color: #262525;
+}
+
+.taskCompiler {
+  margin-bottom: 5px;
   text-align: center;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  color: aqua
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.horizontalLine {
+  border-color: aqua;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  
+}
+
+.taskInput {
+  position: relative;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: .5rem .5rem .5rem .5rem;
+  border: 2px solid aqua;
+  background: transparent;
+  width: 70vw;
+  color: aqua;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+}
+
+::placeholder {
+  color:azure;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+}
+
+/* .taskButton {
+  margin: auto;
+  margin-top: 3px;
+  background: transparent;
+  border: 2px solid aqua;
+  color: aqua;
+  padding: .5rem .5rem .5rem .5rem;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+} */
+
+.taskInputUpdate {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  padding: .5rem .5rem .5rem .5rem;
+  border: 2px solid aqua;
+  background: transparent;
+  width: 70vw;
+  color: aqua;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+}
+
+/* .taskButtonUpdate {
+  margin: auto;
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid aqua;
+  color: aqua;
+  padding: .5rem .5rem .5rem .5rem;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+} */
+
+.taskRow {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  margin-top: 10px;
+  padding: .3rem .5rem .3rem .5rem;
+  border: 2px solid aqua;
+  background: transparent;
+  width: 70vw;
+  color: aqua;
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
+
+.editIcon {
+ margin-right: 7px;
+  color: aqua;
+}
+
+.removeIcon {
+  color: aqua;
+}
+
+
+
+
